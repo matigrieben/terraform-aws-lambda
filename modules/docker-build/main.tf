@@ -20,6 +20,8 @@ resource "docker_registry_image" "this" {
   }
 
   keep_remotely = var.keep_remotely
+
+  triggers = var.docker_image_triggers
 }
 
 resource "aws_ecr_repository" "this" {

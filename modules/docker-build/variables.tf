@@ -82,3 +82,9 @@ variable "platform" {
   type        = string
   default     = null
 }
+
+variable "docker_image_triggers" {
+  description = "A map of Triggers for Docker Image resource."
+  type        = map(string)
+  default     = {}
+}
